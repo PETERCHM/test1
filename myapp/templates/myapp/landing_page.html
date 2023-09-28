@@ -1,0 +1,170 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LisaPremium - Premium Learning Tools</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>
+        /* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.left-pane {
+    flex: 1;
+    padding-right: 20px;
+    color: #333;
+}
+
+.left-pane h2 {
+    font-size: 28px;
+}
+
+.left-pane p {
+    margin-top: 20px;
+}
+
+.left-pane button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.right-pane {
+    flex: 1;
+}
+
+/* Styling the creamish span */
+.creamish-background {
+    background-color: #fff7e6;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+}
+
+/* styles.css */
+
+/* Display the tool elements in a row */
+.tools-container {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly in the container */
+}
+
+/* Style for each tool */
+.tool {
+    width: 45%; /* Adjust the width as needed to control spacing between icons */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Reduce the size of the Grammarly icon */
+.icon-small {
+    width: 100px; /* You can adjust the width and height as needed */
+    height: auto;
+}
+.icon-small1 {
+    width: 200px; /* You can adjust the width and height as needed */
+    height: auto;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to LisaPremium</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="pricing">Pricing</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="left-pane">
+            <h2>Premium Learning Tools at Affordable Prices</h2>
+            <p>Unlock your potential with our vast collection of premium learning resources.</p>
+        </div>
+
+        <div class="right-pane">
+            <h3>Explore Premium Tools</h3>
+            <div class="tools-container">
+                <div class="tool">
+                    <img src="{% static 'images/turnitin1.png' %}" alt="Turnitin" class="icon-small1">
+                    <h4>Turnitin</h4>
+                    <p>Check for plagiarism and improve writing.</p>
+                    <a href="{% url 'run_selenium' %}">Access Now</a>
+                </div>
+                
+                <div class="tool">
+                    <img src="{% static 'images/Grammarly .png' %}" alt="Grammarly" class="icon-small">
+                    <h4>Grammarly</h4>
+                    <p>Improve your writing with AI-powered suggestions.</p>
+                    <a href="grammarly" class="access-button">Access Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 LisaPremium - All rights reserved.</p>
+    </footer>
+
+    <!-- Include external JavaScript file -->
+    <script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>

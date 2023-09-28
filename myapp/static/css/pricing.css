@@ -1,0 +1,41 @@
+/* lisapremiumapp/static/css/pricing.css */
+
+/* Style for pricing container */
+.pricing-plans {
+    display: flex;
+    justify-content: center; /* Center the columns horizontally */
+    gap: 20px; /* Adjust the space between the two pricing sections */
+    background-color: #fff; /* Set background color for the body */
+}
+
+/* Style for each tool */
+.tool {
+    width: 30%; /* Adjust the width to leave space for margin between the columns */
+    padding: 20px; /* Add some padding for spacing and aesthetics */
+    background-color: #f7f7f7; /* Background color for each tool section */
+    border-radius: 10px; /* Rounded corners for each tool section */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+/* Style for the title */
+h1 {
+    text-align: center; /* Center the title horizontally */
+    background-color: #333; /* Background color for the header */
+    color: #fff; /* Text color for the title */
+    padding: 20px 0; /* Add padding to the header */
+}
+
+/* Style for purchase buttons */
+.purchase-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.purchase-button:hover {
+    background-color: #0056b3;
+}

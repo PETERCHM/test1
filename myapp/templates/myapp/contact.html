@@ -1,0 +1,103 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <title>Contact</title>
+
+    <style>
+        /* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Contact content styles */
+.contact-content {
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.contact-content h2 {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.contact-content p {
+    font-size: 18px;
+    color: white;
+    margin: 10px 0;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+}
+
+.contact-content p.email {
+    font-weight: bold;
+}
+
+.contact-content p.phone {
+    font-weight: bold;
+}
+
+/* Add media queries for responsiveness if needed */
+@media (max-width: 768px) {
+    .contact-content {
+        margin: 10px;
+        padding: 10px;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+    </header>
+    <section class="contact-content">
+        <h2>Contact Us</h2>
+
+        
+        <p>You can reach us on  Email: lucynjoka53@gmail.com</p>
+
+        
+        <p>or </p>
+
+
+        <p> find us on instagram</p>
+
+
+
+        <p> or on phone number +254 790380966</p>
+
+
+    </section>
+    <footer>
+        <p>&copy; 2023. All rights reserved.</p>
+    </footer>
+</body>
+</html>

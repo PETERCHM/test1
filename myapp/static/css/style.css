@@ -1,0 +1,112 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.left-pane {
+    flex: 1;
+    padding-right: 20px;
+    color: #333;
+}
+
+.left-pane h2 {
+    font-size: 28px;
+}
+
+.left-pane p {
+    margin-top: 20px;
+}
+
+.left-pane button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.right-pane {
+    flex: 1;
+}
+
+/* Styling the creamish span */
+.creamish-background {
+    background-color: #fff7e6;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+}
+
+/* styles.css */
+
+/* Display the tool elements in a row */
+.tools-container {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly in the container */
+}
+
+/* Style for each tool */
+.tool {
+    width: 45%; /* Adjust the width as needed to control spacing between icons */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Reduce the size of the Grammarly icon */
+.icon-small {
+    width: 100px; /* You can adjust the width and height as needed */
+    height: auto;
+}
+.icon-small1 {
+    width: 200px; /* You can adjust the width and height as needed */
+    height: auto;
+}
