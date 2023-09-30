@@ -31,7 +31,43 @@ import subprocess
 def run_selenium(request):
     try:
         # Replace 'python3' with your Python executable and provide the full path to your script.
-        result = subprocess.run(['python3', '/home/peterse/Desktop/Eng/software1/myapp/turnitin_automation.py'], capture_output=True, text=True)
+        result = subprocess.run(['python3', '/home/peterse/Music/software1/myapp/turnitin_automation.py'], capture_output=True, text=True)
+
+        if result.returncode == 0:
+            return HttpResponse(f'Selenium Script Executed Successfully:\n{result.stdout}')
+        else:
+            return HttpResponse(f'Selenium Script Execution Failed:\n{result.stderr}')
+    except Exception as e:
+        return HttpResponse(f'An error occurred: {str(e)}')
+
+def run_cliffnote(request):
+    try:
+        # Replace 'python3' with your Python executable and provide the full path to your script.
+        result = subprocess.run(['python3', '/home/peterse/Music/software1/myapp/cliffnote.py'], capture_output=True, text=True)
+
+        if result.returncode == 0:
+            return HttpResponse(f'Selenium Script Executed Successfully:\n{result.stdout}')
+        else:
+            return HttpResponse(f'Selenium Script Execution Failed:\n{result.stderr}')
+    except Exception as e:
+        return HttpResponse(f'An error occurred: {str(e)}')
+
+def run_quillbot(request):
+    try:
+        # Replace 'python3' with your Python executable and provide the full path to your script.
+        result = subprocess.run(['python3', '/home/peterse/Music/software1/myapp/quillibot.py'], capture_output=True, text=True)
+
+        if result.returncode == 0:
+            return HttpResponse(f'Selenium Script Executed Successfully:\n{result.stdout}')
+        else:
+            return HttpResponse(f'Selenium Script Execution Failed:\n{result.stderr}')
+    except Exception as e:
+        return HttpResponse(f'An error occurred: {str(e)}')
+
+def run_studypool(request):
+    try:
+        # Replace 'python3' with your Python executable and provide the full path to your script.
+        result = subprocess.run(['python3', '/home/peterse/Music/software1/myapp/studypool.py'], capture_output=True, text=True)
 
         if result.returncode == 0:
             return HttpResponse(f'Selenium Script Executed Successfully:\n{result.stdout}')

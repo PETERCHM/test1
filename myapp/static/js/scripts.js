@@ -11,4 +11,16 @@ document.getElementById('turnitin-automation-button').addEventListener('click', 
         })
         .catch(error => console.error('Error loading the Python script:', error))
 });
+
+document.getElementById("access-button").addEventListener("click", function() {
+    // Make an AJAX request to trigger the Cliffnote script via Django views
+    fetch('/run_cliffnote/')  // Replace with the correct Django URL for Cliffnote
+        .then(response => response.text())
+        .then(data => {
+            // Handle the response data if needed
+            console.log(data);
+        })
+        .catch(error => console.error('Error triggering Cliffnote script:', error))
+});
+
 </script>
