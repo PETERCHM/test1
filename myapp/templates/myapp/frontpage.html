@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Front Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("/static/images/library.jpg");
+            background-size: cover; /* Adjusted the background size to cover the entire viewport */
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .get-started-button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 15px 30px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 18px;
+            transition: background-color 0.3s;
+            text-decoration: none; /* Remove underline from links */
+        }
+
+        .get-started-button:hover {
+            background-color: #0056b3;
+        }
+
+        .introduction {
+            text-align: center;
+            color: black;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Slideshow */
+        #slideshow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            animation: changeBg 15s linear infinite;
+        }
+
+        @keyframes changeBg {
+            0%, 100% { background-image: url("/static/images/library.jpg"); }
+            25% { background-image: url("/static/images/francesca-grima-ln_slYqaMiI-unsplash.jpg"); }
+            50% { background-image: url("/static/images/graduation.jpg"); }
+            75% { background-image: rl("/static/images/NYC_-_New_York_City_Library_-_1723.jpg"); }
+        }
+    </style>
+</head>
+<body>
+    <div class="introduction">
+        <p>Our website is a valuable resource for learners looking to enhance their education productivity. We offer premium services, including Grammary, Turnitin, StudyPool, CliffsNotes, and Quillibolt, designed to assist students, teachers, educators, and anyone aiming to improve their writing quality and perfection.</p>
+        <a href="{% url 'registration' %}" class="get-started-button">Get Started</a>
+    </div>
+    <div id="slideshow"></div>
+</body>
+</html>

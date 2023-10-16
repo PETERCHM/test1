@@ -33,7 +33,7 @@ class PaymentTransaction(models.Model):
     date_modified = models.DateTimeField(auto_now=True)
     date_created = models.DateTimeField(auto_now=False, auto_now_add=True)
 
-    content_type = models.ForeignKey(ContentType, on_delete=models.CASCADE, related_name='APP_paymenttransactions')
+    content_type = models.ForeignKey(ContentType, on_delete=models.CASCADE, related_name='myapp_paymenttransactions')
     object_id = models.PositiveIntegerField(default=0)
     content_object = GenericForeignKey('content_type', 'object_id')
 

@@ -23,6 +23,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'myapp',
     'corsheaders',  
+    'rest_framework',
+    'mpesa',
 ]
 
 MIDDLEWARE = [
@@ -94,3 +96,14 @@ STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+MPESA_CONFIG = {
+    'CONSUMER_KEY': config('MPESA_CONSUMER_KEY'),
+    'CONSUMER_SECRET': config('MPESA_CONSUMER_SECRET'),
+    'HOST_NAME': config('MPESA_HOST_NAME'),
+    'PASS_KEY': config('MPESA_PASS_KEY'),
+    'SAFARICOM_API': config('MPESA_SAFARICOM_API'),
+    'AUTH_URL': config('MPESA_AUTH_URL'),
+    'TRANSACTION_TYPE': config('MPESA_TRANSACTION_TYPE'),
+    'TILL_NUMBER': config('MPESA_TILL_NUMBER'),
+    'SHORT_CODE': config('MPESA_SHORT_CODE'),
+}
